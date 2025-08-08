@@ -5,8 +5,6 @@ src/__pycache__/
 # Virtual environment
 myvenv/
 
-# Model files (optional)
-models/*.pkl
 
 # Data files (optional)
 data/raw/*.csv
