@@ -1,4 +1,3 @@
-# app_final.py
 import streamlit as st
 from src.predict import predict_message
 
@@ -8,15 +7,15 @@ st.sidebar.title("About")
 st.sidebar.info("SpamLens: Where AI inspects every message")
 st.sidebar.info("AI-powered spam detection using Naive Bayes.")
 
-# Main content
-st.title("📧 SpamLens (AI-Powered Spam Detection) ")
+
+st.markdown("<h1> 📧 <span style='color:red'>Spam</span>Lens </h1>", unsafe_allow_html=True)
+st.header("(AI-Powered Spam Detection)")
+
 st.markdown("Enter a message below to check if it's spam.")
 
 message = st.text_area("Message:", placeholder="Type your message here...")
 
-if st.button("🎯 Try Sample Spam"):
-    message = "Congratulations! You've won $1000. Click now to claim!"
-    st.session_state.message = message
+
 
 if st.button("🔍 Analyze"):
     if not message.strip():
