@@ -1,11 +1,7 @@
-# Python cache and compiled files
 src/__pycache__/
 *.pyc
 
-# Virtual environment
 myvenv/
 
-
-# Data files (optional)
 data/raw/*.csv
 
